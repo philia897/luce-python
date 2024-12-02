@@ -1,0 +1,80 @@
+/* assets/styles.css */
+
+:root.light {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --hover-bg-color: #f0f0f0;
+    --hover-text-color: #000000;
+    --selected-bg-color: #e0e0e0;
+    --selected-text-color: #000000;
+}
+
+:root.dark {
+    --bg-color: #2c2c2c;
+    --text-color: #ffffff;
+    --hover-bg-color: #3d3d3d;
+    --hover-text-color: #ffffff;
+    --selected-bg-color: #505050;
+    --selected-text-color: #ffffff;
+}
+
+/* Apply the variables to the entire page */
+html, body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dropdown container */
+.Select__control {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    border: 1px solid var(--text-color) !important;
+}
+
+/* Dropdown options */
+.Select__menu {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+}
+
+/* Option hover */
+.Select__option--is-focused {
+    background-color: var(--hover-bg-color) !important;
+    color: var(--hover-text-color) !important;
+}
+
+/* Selected option */
+.Select__option--is-selected {
+    background-color: var(--selected-bg-color) !important;
+    color: var(--selected-text-color) !important;
+}
+
+/* Light Theme */
+/* .light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+.light-mode .dash-graph {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+} */
+
+/* Dark Theme */
+/* .dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+.dark-mode .dash-graph {
+    background-color: #121212;
+    border: 1px solid #444444;
+} */
+
+/* Common Graph Styles */
+/* .dash-graph {
+    padding: 10px;
+    border-radius: 5px;
+} */
